@@ -103,7 +103,7 @@ Module.register("MMM-ShairportMetadata",{
 			return wrapper;
 		}
 
-		if (this.metadata['snam'] != undefined) {
+		if (this.metadata && Object.keys(this.metadata) && this.metadata['snam'] != undefined) {
 			this.playing_snam = this.metadata['snam'];
 		}
 
